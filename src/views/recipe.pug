@@ -1,0 +1,8 @@
+extends templates/layout
+
+block potato 
+    form(method="POST")
+        input( name="title" type="text" placeholder="Recipe Name")
+        input( name="description" type="text" placeholder="Write a description")
+        textarea(name="method" cols="30" rows="10" placeholder="Write your method")
+        button(type="submit") Upload Recipe

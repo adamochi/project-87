@@ -1,0 +1,12 @@
+block potato
+    h1 Login
+    if(errorMessage)
+        h2=errorMessage
+    form(method="POST")
+        input(type="text" name="username" placeholder="Username")
+        input(type="password" name="password" placeholder="Password")
+        button(type="submit") Login
+    hr
+    div 
+        span Don't have an account? 
+        a(href="/join") Create one here &rarr;

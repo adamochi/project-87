@@ -1,0 +1,14 @@
+extends templates/layout
+
+block potato 
+    h1 trending recipes
+
+    each recipe in recipes 
+        h2=recipe.title 
+        p=recipe.description
+        each method in recipe.method
+            ul
+                li=recipe.method
+            
+    else
+        h4 Sorry, nothing found

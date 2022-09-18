@@ -1,0 +1,17 @@
+extends templates/layout
+
+block potato 
+    h1 Create an Account
+    if(errorMessage)
+    h2=errorMessage
+    form(method="post")
+        input(name="username" type="text" required placeholder="Username")
+        input(name="email" type="email" required placeholder="Email")
+        input(name="password" type="password" required placeholder="Password")
+        input(name="password2" type="password" required placeholder="Re-type Password")
+        input(name="name" type="name" required placeholder="Full Name")
+        button(type="submit") Join
+    hr
+    div 
+        span Already have an account? 
+        a(href="/login") Login here &rarr;
